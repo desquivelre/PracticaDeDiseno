@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.padre {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.margen-interno{
+  padding: 0 50px;
+}
+
+.header {
+  background: url("../images/lady-justice.jpg") top;
+  background-size: cover;
+
+  display: flex;
+  flex-flow: column nowrap;
+}
+.menu{
+  background: rgba(0,0,0,.5);
+  display: flex;
+  flex-flow: row nowrap;
+  height: 85px;
+  align-items: center;
+
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+.logo{
+  flex: 1 1 auto;
+}
+.logo-image{
+  width: 65px;
+  height: 65px;
+  padding: 0;
+  margin: 0;
+}
+.nav{
+  flex: 5 1 auto;
+}
+.nav a{
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.nav a:hover{
+  color: #ffe359;
+}
+.nav a i{
+  margin-right: 12px;
+  margin-left: 28px;
+}
+
+.social{
+  flex: 1 1 auto;
+  display: flex;
+}
+.social a{
+  color: white;
+  font-size: 25px;
+}
+.social a:hover{
+  color: #ffe359;
+}
+.social a i{
+  margin-right: 30px;
+}
+
+.texto-principal{
+  height: 580px;
+  display: flex;
+  align-items: center;
+}
+h1{
+  font-size: 21px;
+  color: white;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.section {
+  background: #f7f7f7;
+  display: flex;
+  padding-top: 25px;
+}
+.articulos{
+  background: #f7f7f7;
+  flex: 2 1 auto;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+.article{
+  color: #444;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin: 10px 0 0 0;
+  flex: 1 1 45%;
+  background: #ececec;
+}
+.article a{
+  color: #f7f7f7;
+  font-size: 13px;
+  padding: 10px 10px;
+  background: black;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 10px 0 10px 10px;
+}
+.article a:hover{
+  background: #ffe359;
+  color: black;
+}
+
+.article h3{
+  color: white;
+  font-size: 13px;
+  padding: 10px 0 10px 10px;
+  margin-top: -80px;
+}
+.article h2{
+  font-size: 25px;
+  text-transform: uppercase;
+  padding: 0 0 10px 10px;
+  color: white;
+}
+.article p{
+  padding: 10px 0 10px 10px;
+}
+.article img{
+  width: 100%;
+  height: 350px;
+}
+.navegacion{
+  background: black;
+  flex: 1 1 100%;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 0 0;
+  padding: 7px 0;
+}
+.navegacion a{
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 0 10px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navegacion a:hover{
+  color: #ffe359;
+}
+.aside{
+  flex: 1 1 auto;
+  margin: 10px 0 10px 20px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.publicidad{
+  flex: 1 1 100%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+
+}
+.publicidad h4{
+  background: black;
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+}
+.publicidad img{
+  width: 100%;
+}
+.footer {
+  background: black;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 15px 0;
+}
+.pie{
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+}
+.pie a{
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 0 10px;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+
+@media all and (max-width: 1060px){
+  .nav a{
+    font-size: 30px;
+  }
+  .off{
+    display: none;
+  }
+
+  .texto-principal{
+    height: 480px;
+  }
+  .texto-principal h1{
+    font-size: 19px;
+  }
+
+  .section{
+    flex-flow: column wrap;
+    margin: 10px 0 10px 0;
+
+  }
+
+  .aside{
+    flex-flow: row wrap;
+    margin: 10px 0 10px 0;
+  }
+  .publicidad{
+    flex: 1 1 20%;
+  }
+
+  .menu{
+    flex-flow: column wrap;
+    height: auto;
+  }
+}
+
+@media all and (max-width: 770px){
+  .articulos{
+    flex-flow: column wrap;
+  }
+
+  .aside{
+    flex-flow: column nowrap;
+  }
+
+  .texto-principal h1{
+    font-size: 17px;
+  }
+}
+

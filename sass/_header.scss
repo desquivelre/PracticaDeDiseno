@@ -1,0 +1,68 @@
+@mixin header-template{
+  .header {
+    background: black;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .menu {
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-flow: row nowrap;
+    height: 85px;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .logo {
+    flex: 1 1 auto;
+
+    .logo-image {
+      width: 65px;
+      height: 65px;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .nav {
+    flex: 5 1 auto;
+
+    a {
+      color: white;
+      font-size: 14px;
+      text-decoration: none;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: bold;
+
+      &:hover {
+        color: $hover-link;
+      }
+
+      i {
+        margin-right: 12px;
+        margin-left: 28px;
+      }
+    }
+  }
+
+  .social {
+    flex: 1 1 auto;
+    display: flex;
+
+    a {
+      color: white;
+      font-size: 25px;
+
+      &:hover {
+        color: $hover-link;
+      }
+
+      i {
+        margin-right: 30px;
+      }
+    }
+  }
+}
